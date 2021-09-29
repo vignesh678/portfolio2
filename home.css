@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 150vh;
+}
+.home{
+    position: relative;
+}
+#mySidenav{
+    text-transform: uppercase;
+    text-align:left;
+    background-color: lightgray;
+    width: 100%;
+    box-shadow: 2px 4px 5px ;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 14px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul li a{
+    font-size: 34px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: lime;
+}
+#mySidenav{
+    position: absolute;
+    text-transform: relative;
+    text-align:left;
+    background-color: lightgray;
+    width: 100%;
+    box-shadow: 2px 4px 5px;
+
+}
+.main-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    height: 100vh;
+}
+.images img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.container-1{
+    margin-bottom: 18px;
+}
+.container-2{
+    margin-bottom: 18px;
+}
+.container-3{
+      margin: 22px;
+}
+.p1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: lightgreen;
+}
+.p2{
+    color: rgba(148, 147, 147, 0.911);
+}
+.span1{
+    color: rgb(119, 116, 116);
+    font-weight: 500;
+}
+.p2{
+    font-size:22px;
+    text-transform: capitalize;
+}
+.button1{
+    padding: 12px 14px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid lightgreen;
+    transition: 0.8s;
+   
+}
+.button1:hover{
+    background-color: rgb(27, 223, 27);
+    color: #fff;   
+}
+.iconify{
+    font-size: 24px;
+    margin: 5px 8px;
+}
+@media only screen and (max-width:787px){
+    body{
+        width: 100%;
+        height:auto;
+    }  
+    .images img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    } 
+    .p1{
+        font-size: 28px;  
+    }
+    .p2{
+        font-size: 18px;
+        padding: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .button1{
+        padding: 8px 10px;
+        font-size: 20px;
+    }
+    .iconify{
+        font-size: 18px;
+        padding: 0;
+    }
+}
