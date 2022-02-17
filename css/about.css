@@ -1,0 +1,407 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Nunito+Sans:wght@600&family=Roboto+Slab:wght@200;300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 150vh;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.aboutspan,
+.expspan {
+  color: lime;
+}
+.personalinfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main2 {
+  margin: 18px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  gap: 30%;
+}
+.head {
+  color: rgb(131, 129, 129);
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.biop {
+  font-size: 24px;
+  color: rgb(131, 128, 128);
+  text-transform: capitalize;
+  display: flex;
+}
+.biospan {
+  color: black;
+}
+#mySidenav {
+  text-transform: uppercase;
+  text-align: left;
+  background-color: lightgray;
+  width: 100%;
+
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 14px;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+ul li a {
+  font-size: 34px;
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+ul li a:hover {
+  color: lime;
+}
+.button1 button {
+  padding: 15px 18px;
+  font-size: 18px;
+  border-radius: 30px;
+  outline: none;
+  border: 3px solid limegreen;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+.button1 button:hover {
+  background-color: chartreuse;
+  color: #fff;
+}
+.exp1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  width: 60%;
+  place-items: center;
+}
+.spannum {
+  font-size: 38px;
+  color: chartreuse;
+  font-weight: 600;
+}
+.expnum {
+  height: 180px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(42, 179, 24);
+  font-size: 24px;
+  margin-bottom: 18px;
+  margin: 20px 20px 20px 0px;
+  border-radius: 20px;
+}
+.title2 {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.case,.hat {
+  font-size: 32px;
+}
+.exptext,
+.edutext {
+  font-size: 28px;
+}
+.spandate {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 6px 8px;
+  font-size: 18px;
+  background: rgb(231, 48, 48);
+  color: #fff;
+}
+.expp1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 12px 0px 0px 12px;
+  color: chartreuse;
+}
+.expp2 {
+  margin: 20px;
+  font-size: 24px;
+}
+.edutext1 {
+  float: left;
+}
+.biop ion-icon,
+.iconify {
+  margin: 5px;
+  font-size: 24px;
+}
+.iconify{
+  margin: 5px 8px;
+}
+.hat,.case
+{
+color: lawngreen;
+font-size: 38px;
+}
+.headp{
+  display: flex;
+  flex-direction: column;
+}
+.text{
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.bar-container{
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.progress-bar1,.progress-bar2{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.innertext{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.skillbar{
+  height: 14px;
+  background: #cec7c7;
+  border-radius: 5px;
+}
+
+
+.percent{
+  height: 14px;
+  background: rgb(32, 204, 40);
+  border-radius: 3px;
+  position: relative;
+  animation: animate 6s;
+}
+
+.percent::before{
+  content: attr(per);
+  position: absolute;
+  color: #fff;
+  padding:  4px 6px;
+  background: rgb(156, 155, 155);
+  color: #111;
+  height: 14px;
+  border-radius: 5px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.percent::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgb(156, 155, 155);
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.main{
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+.exptext,.edutext{
+  background-color: azure;
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+
+}
+.active{
+  color: lime;
+}
+@keyframes animate{
+  from{
+      width: 0%;    
+  }
+  to{
+      width: 100%;  
+  }
+}
+@media only screen and (max-width: 787px) {
+  body{
+    width: 100%;
+    height: auto;
+  }
+  .about{
+    position: relative;
+  }
+  .title,
+  .head {
+    font-size: 38px;
+  }
+  .head {
+    font-size: 28px;
+  }
+  .navbar {
+    width: 100%;
+  }
+   nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .spandate {
+    font-size: 20px;
+    padding: 6px 8px;
+  }
+  .exp1 {
+    font-size: 22px;
+    display: grid;
+    place-items: center;
+  }
+  .expp2 {
+    font-size: 18px;
+    padding: 0px 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  .expnum {
+    height: 120px;
+    width: 145px;
+    padding:10px;
+  }
+  .bio{
+    display: grid;
+    place-items: center;
+    margin-right: 73px;
+  }
+
+  .title {
+    margin-bottom: 0px;
+  }
+  .title2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .personalinfo {
+    font-size: 8px;
+    position: relative;
+    top: 20px;
+  }
+  .biop,
+  .biospan {
+    font-size: 18px;
+  }
+  .main2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+  }
+  .main1 {
+    margin: 20px 0;
+  }
+  body {
+    width: 100%;
+    height: auto;
+  }
+  .about {
+    width:100vw;
+  }
+  .button1 button {
+    padding: 12px 14px;
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  .spannum {
+    font-size: 28px;
+  }
+  .title {
+    z-index: 10;
+    width: 100%;
+  }
+  .head {
+    position: relative;
+    top: 50px;
+    margin-bottom: 18px;
+  }
+  .headp {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+  }
+  .educationinfo {
+    margin-bottom: 30px;
+  }
+  .iconify {
+    font-size: 18px;
+  }
+  .hat,
+  .case {
+    font-size: 38px;
+    color: lime;
+  }
+  .education{
+    position:absolute;
+  }
+  #mySidenav{
+    width: 100%;
+  }
+  .bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .experience{
+    position: relative;
+  }
+  .education{
+    position: relative;
+  }
+  .text{
+    font-size: 18px;
+  }
+  .exptext,.edutext{
+    margin: 10px;
+    padding: 20px;
+  }
+}
